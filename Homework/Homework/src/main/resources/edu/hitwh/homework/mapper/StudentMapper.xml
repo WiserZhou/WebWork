@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hitwh.homework.mapper.StudentMapper">
+
+    <!-- 查询学员列表 -->
+    <select id="list" resultType="edu.hitwh.homework.entity.Student">
+        select * from student
+        <where>
+            <if test="name != null and name != ''">
+                name like concat('%', #{name}, '%')
+            </if>
+            <if test="stuId != null and stuId != ''">
+                and stu_id like concat('%', #{stuId}, '%')
+            </if>
+            <if test="education != null">
+                and education = #{education}
+            </if>
+            <if test="classId != null">
+                and class_id = #{classId}
+            </if>
+        </where>
+        order by update_time desc
+    </select>
+
+    <!-- 修改学员信息 -->
+    <update id="update">
+        update student
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="stuId != null and stuId != ''">
+                stu_id = #{stuId},
+            </if>
+            <if test="classId != null">
+                class_id = #{classId},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="telephone != null and telephone != ''">
+                telephone = #{telephone},
+            </if>
+            <if test="education != null">
+                education = #{education},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!-- 删除学员 -->
+    <select id="delete">
+        delete from student where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+</mapper>

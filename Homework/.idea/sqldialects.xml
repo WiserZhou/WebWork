@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/ClassMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/CourseMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/CourseTeachersMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/DeptMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/EmpMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/java/edu/hitwh/homework/mapper/StudentMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/resources/edu/hitwh/homework/mapper/ClassMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/resources/edu/hitwh/homework/mapper/CourseMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/resources/edu/hitwh/homework/mapper/CourseTeachersMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/resources/edu/hitwh/homework/mapper/EmpMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Homework/src/main/resources/edu/hitwh/homework/mapper/StudentMapper.xml" dialect="GenericSQL" />
+  </component>
+</project>
